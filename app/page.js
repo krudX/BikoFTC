@@ -51,7 +51,7 @@ export default function Home() {
 
             <div className="about-main grid md:grid-cols-2 items-center gap-10 md:gap-20">
 
-              <div className="col h-full flex flex-col justify-between gap-20 border-b pb-10 md:border-r border-text-light md:pr-20">
+              <div className="col h-full flex flex-col justify-between gap-20 border-b md:border-b-0 pb-10 md:border-r border-text-light md:pr-20">
                 <h2 className="about-title text-h2">Carbon fiber frame with a sleek design</h2>
                 <div className="about-body grid gap-16">
                   <p className="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
