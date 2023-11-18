@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.otf");
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  /* Colors */
+  --clr-text-white: #ffffff;
+  --clr-text-black: #0b0c0e;
+  --clr-text-light: #bbbbbb;
+  --clr-text-footer: #59607c;
+  --clr-bg-light-gray: #f1f1f1;
+  --clr-bg-dark-gray: #212121;
+  --clr-border: #414141;
+  --clr-bg-dark-gray: #141415;
+
+  /* Font Family */
+  --ff-main: "Satoshi", sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--ff-main);
+  background-color: var(--clr-text-white);
+  color: var(--clr-text-black);
+}
+
+a {
+  display: inline-block;
+}
+
+.text-h1 {
+  font-size: 130px;
+  line-height: 120%;
+}
+.text-h2 {
+  font-size: 60px;
+  line-height: 120%;
+}
+.text-h3 {
+  font-size: 40px;
+  line-height: 120%;
+}
+.text-h4 {
+  font-size: 30px;
+  line-height: 120%;
+}
+.text-btn {
+  font-size: 25px;
+  line-height: 32.3px;
+}
+@media (max-width: 768px) {
+  .text-h1 {
+    font-size: 60px;
+  }
+  .text-h2 {
+    font-size: 40px;
+  }
 }
